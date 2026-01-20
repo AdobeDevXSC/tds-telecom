@@ -1,22 +1,22 @@
 {
   "mappings": [
-    "/content/wknd-universal/language-masters/en:/",
-    "/content/wknd-universal/language-masters/en/:/en/",
-    "/content/wknd-universal/language-masters/fr/:/fr/",
-    "/content/wknd-universal/language-masters/fr:/fr",
-    "/content/wknd-universal/language-masters/es/:/es/",
-    "/content/wknd-universal/language-masters/es:/es",
-    "/content/wknd-universal/language-masters/ja/:/ja/",
-    "/content/wknd-universal/language-masters/ja:/ja",
-    "/content/wknd-universal/language-masters/de/:/de/",
-    "/content/wknd-universal/language-masters/de:/de",
-    "/content/wknd-universal/configuration:/.helix/config.json",
-    "/content/wknd-universal/metadata:/metadata.json",
-    "/content/wknd-universal/redirects:/redirects.json",
-    "/content/wknd-universal/placeholders:/placeholders.json"
+    "/content/tds-telecom/language-masters/en:/",
+    "/content/tds-telecom/language-masters/en/:/en/",
+    "/content/tds-telecom/language-masters/fr/:/fr/",
+    "/content/tds-telecom/language-masters/fr:/fr",
+    "/content/tds-telecom/language-masters/es/:/es/",
+    "/content/tds-telecom/language-masters/es:/es",
+    "/content/tds-telecom/language-masters/ja/:/ja/",
+    "/content/tds-telecom/language-masters/ja:/ja",
+    "/content/tds-telecom/language-masters/de/:/de/",
+    "/content/tds-telecom/language-masters/de:/de",
+    "/content/tds-telecom/configuration:/.helix/config.json",
+    "/content/tds-telecom/metadata:/metadata.json",
+    "/content/tds-telecom/redirects:/redirects.json",
+    "/content/tds-telecom/placeholders:/placeholders.json"
   ],
   "includes": [
-    "/content/wknd-universal/",
-    "/content/dam/wknd-universal/"
+    "/content/tds-telecom/",
+    "/content/dam/tds-telecom/"
   ]
 }
