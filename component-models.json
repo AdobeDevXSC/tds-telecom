@@ -363,20 +363,6 @@
       {
         "component": "boolean",
         "valueType": "boolean",
-        "name": "sec-text-center",
-        "label": "Center text",
-        "condition": {
-          "!=": [
-            {
-              "var": "style"
-            },
-            "bg-image"
-          ]
-        }
-      },
-      {
-        "component": "boolean",
-        "valueType": "boolean",
         "label": "Center text",
         "name": "sec-text-center",
         "value": false
