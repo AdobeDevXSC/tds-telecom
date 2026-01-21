@@ -33,6 +33,8 @@
   --link-hover-color: var(--brand-link-hover-color, #F97316);
   --main-accent-color: var(--brand-theme-color, #FB923C);
 
+  --theme-main-bg-color: #19388a;
+
 
   --dark-color-opacity: rgba(0, 0, 0, 0.55);
   --light-color-opacity: rgba(255, 255, 255, 0.5);
@@ -815,8 +817,8 @@ main .section[data-sec-text-center="true"] {
 
 /* Section Background Colors */
 main .section.bg-theme {  
-  background-color: var(--main-accent-color);
-  color: var(--text-color);
+  background-color: var(--theme-main-bg-color);
+  color: #fff;
 }
 main .section.bg-dark {
   background-color: var(--dark-color);
