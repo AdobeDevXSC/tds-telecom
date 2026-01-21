@@ -517,6 +517,7 @@
 .cards li.image-top {
   background: transparent !important;
   border: none !important;
+  box-shadow: unset !important;
 }
 
 .cards li.image-top .cards-card-body {

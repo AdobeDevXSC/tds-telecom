@@ -16,6 +16,8 @@
 .carousel-container .carousel-wrapper .carousel {
   padding: 5%;
   position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .carousel-container .carousel-wrapper .carousel > ul {
   list-style: none;
@@ -37,12 +39,31 @@
   padding: 0px;
   flex: 1 1 0%;
   border:none;
+  max-height: 400px;
 }
+
+/* Keep UL in slider layout */
+.carousel-container .carousel-wrapper .carousel > ul {
+  display: flex !important;
+  flex-direction: row;
+  overflow: hidden; /* hide other slides */
+  scroll-snap-type: x mandatory;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-container .carousel-wrapper .carousel > ul > li {
+  flex: 0 0 100%; /* each slide takes full width */
+  max-width: 100%;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
 .carousel-container .carousel-wrapper .carousel .cards-card-body {
   margin: auto;
 }
 .carousel-container .carousel-wrapper .carousel .cards-card-image {
   line-height: 0;
+  height: 100%;
 }
 .carousel-container .carousel-wrapper .carousel .cards-card-body p {
   margin-bottom: 0;
@@ -295,7 +316,7 @@
 
 /* Card Teaser Overlay */
 .carousel > ul > li.teaser-overlay {
-  box-shadow: 0 3px 20px #00000010;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
   border: 1px solid var(--light-color);
   border-radius: 4px;
   flex-direction: column;
@@ -317,10 +338,11 @@
   flex-basis: 0;
   align-items: center;
   position: absolute;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0);
   color: var(--text-light);
   display: block;
   align-content: center;
+  max-width: 675px;
 }
 .carousel > ul > li.teaser-overlay .cards-card-body div[data-aue-type="richtext"] {
   width: 50%;
@@ -333,10 +355,10 @@
 }
 .carousel > ul > li.teaser-overlay .cards-card-body h1 {
   margin: 0;
-  font-size: 22px;
-  line-height: 32px;
-
+  font-size: 56px;
+  line-height: 1.5;
 }
+
 .carousel > ul > li.teaser-overlay .cards-card-body p {
   margin: 10px 0;
   font-size: 16px;
@@ -430,22 +452,6 @@
 @media (width < 1024px) {
   .carousel-container .carousel-wrapper .carousel {
     padding: 0 5%;
-  }
-    
-  /* Keep UL in slider layout */
-  .carousel-container .carousel-wrapper .carousel > ul {
-    display: flex !important;
-    flex-direction: row;
-    overflow: hidden; /* hide other slides */
-    scroll-snap-type: x mandatory;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .carousel-container .carousel-wrapper .carousel > ul > li {
-    flex: 0 0 100%; /* each slide takes full width */
-    max-width: 100%;
-    margin: 0;
-    scroll-snap-align: start;
   }
     
  
