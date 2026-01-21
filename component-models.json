@@ -388,6 +388,25 @@
       },
       {
         "component": "select",
+        "name": "Text Color",
+        "label": "Text Color",
+        "options": [
+         {
+            "name": "Theme Blue",
+            "value": "color-theme"
+          },
+          {
+            "name": "White",
+            "value": "color-white"
+          },
+          {
+            "name": "Black",
+            "value": "color-black"
+          }
+        ]
+      }
+      {
+        "component": "select",
         "name": "style",
         "label": "Style",
         "options": [

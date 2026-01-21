@@ -486,3 +486,16 @@
   }
 
 }
+
+
+.carousel > ul > li.color-theme {
+  color: var(--theme-main-bg-color)
+}
+
+.carousel > ul > li.color-white {
+  color: #fff;
+}
+
+.carousel > ul > li.color-black { 
+  color: #000;
+}
