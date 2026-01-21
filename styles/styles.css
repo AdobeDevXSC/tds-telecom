@@ -231,7 +231,7 @@
     --section-reduced-space: 320px;
 
     /* Screen variables */
-    --nav-height: 44px;
+    --nav-height: 245px;
     --nav-padding: 35px;
 
     /* main-heading styles */
@@ -391,12 +391,7 @@ body.blue-theme header .nav-wrapper nav .nav-sections ul > li > a:hover{
 }
 /*theme header-footer*/
 header {
-  /* height: var(--nav-height);
-  min-height: 90px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
+  height: var(--nav-height);
   z-index: 111;
 }
 
