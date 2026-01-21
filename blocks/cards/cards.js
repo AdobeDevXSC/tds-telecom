@@ -20,6 +20,8 @@ export default function decorate(block) {
     const cardStyle = styleParagraph?.textContent?.trim() || 'default';
     if (cardStyle && cardStyle !== 'default') {
       li.className = cardStyle;
+    } else {
+      li.className = 'default';
     }
     
     // Read CTA style from the fourth div (index 3)

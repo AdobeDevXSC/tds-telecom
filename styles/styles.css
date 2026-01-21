@@ -542,6 +542,24 @@ button:disabled:hover::after {
   cursor: unset;
 }
 
+a.button.primary {
+  color: #fff;
+  background-color: #19388a;
+  font-size: 16px;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  line-height: 21px;
+  padding: 12px 16px;
+}
+
+a.button.primary:hover {
+  background-color: #0c8fd0;
+}
+
+a.button.primary::after{
+  display: none;
+}
+
 a.button.secondary,
 button.secondary {
   background-color: unset;
@@ -635,7 +653,6 @@ main .cards-container {
 
 
 
-
 /* sections */
 main > .section {
   margin: 40px 0;
@@ -643,13 +660,22 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   padding: 0 24px;
 }
 
 main > .section:first-of-type {
   margin-top: 0;
+}
+
+main .section > .default-content-wrapper > h1, 
+main .section > .default-content-wrapper > h2,
+main .section > .default-content-wrapper > h3,
+main .section > .default-content-wrapper > h4, 
+main .section > .default-content-wrapper > h5,
+main .section > .default-content-wrapper > h6 {
+  color: #19388a;
 }
 
 @media (width >= 900px) {
@@ -781,6 +807,10 @@ main > .section[data-sec-full-width="true"] > div {
   margin: 0;
   padding: 0;
 }
+
+main .section[data-sec-text-center="true"] {
+  text-align: center;
+} 
 
 
 /* Section Background Colors */

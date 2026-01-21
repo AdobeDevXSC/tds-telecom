@@ -196,6 +196,7 @@ export default async function decorate(block) {
         
     
       } catch (error) {
+        console.log("error: ", error)
         console.error('Error rendering content fragment:', {
           error: error.message,
           stack: error.stack,
