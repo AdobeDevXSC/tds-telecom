@@ -404,7 +404,7 @@
             "value": "color-black"
           }
         ]
-      }
+      },
       {
         "component": "select",
         "name": "style",
