@@ -30,17 +30,25 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     if (i >= carouselStartIndex) {
       const li = document.createElement('li');
-      
+
       // Read card style from the third div (index 2)
-      const styleDiv = row.children[2];
+      const textStyleDiv = row.children[2];
+      const textStyleParagraph = textStyleDiv?.querySelector('p');
+      const textCardStyle = textStyleParagraph?.textContent?.trim() || 'default';
+      if (textCardStyle && textCardStyle !== 'default') {
+        li.classList.add(textCardStyle)   ;
+      }
+
+      // Read card style from the fourth div (index 3)
+      const styleDiv = row.children[3];
       const styleParagraph = styleDiv?.querySelector('p');
       const cardStyle = styleParagraph?.textContent?.trim() || 'default';
       if (cardStyle && cardStyle !== 'default') {
-        li.className = cardStyle;
+        li.classList.add(cardStyle);
       }
       
-      // Read CTA style from the fourth div (index 3)
-      const ctaDiv = row.children[3];
+      // Read CTA style from the fourth div (index 4)
+      const ctaDiv = row.children[4];
       const ctaParagraph = ctaDiv?.querySelector('p');
       const ctaStyle = ctaParagraph?.textContent?.trim() || 'default';
 
@@ -57,7 +65,7 @@ export default function decorate(block) {
         else if (index === 1) {
           div.className = 'cards-card-body';
         }
-        // Third div (index 2) - Card style configuration
+        // Third div (index 2) - Text Color style configuration
         else if (index === 2) {
           div.className = 'cards-config';
           const p = div.querySelector('p');
@@ -65,8 +73,16 @@ export default function decorate(block) {
             p.style.display = 'none'; // Hide the configuration text
           }
         }
-        // Fourth div (index 3) - CTA style configuration
+        // Fourth div (index 3) - Card style configuration
         else if (index === 3) {
+          div.className = 'cards-config';
+          const p = div.querySelector('p');
+          if (p) {
+            p.style.display = 'none'; // Hide the configuration text
+          }
+        }
+        // Fifth div (index 4) - CTA style configuration
+        else if (index === 4) {
           div.className = 'cards-config';
           const p = div.querySelector('p');
           if (p) {

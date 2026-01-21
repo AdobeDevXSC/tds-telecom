@@ -23,6 +23,7 @@ header nav {
   min-height: 90px;
   align-items: center;
   display: flex;
+  border-bottom: 1px solid #ededed;
 }
 
 header nav[aria-expanded='true'] {
@@ -54,6 +55,7 @@ header nav .nav-brand .default-content-wrapper > *:not(a) {
     grid-template:
     'hamburger brand tools' 1fr
     'sections sections sections' 1fr / auto 1fr auto;
+    border-bottom: none;
   }
 
   header nav[aria-expanded='true'] {
