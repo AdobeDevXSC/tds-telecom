@@ -345,8 +345,7 @@
   max-width: 675px;
 }
 .carousel > ul > li.teaser-overlay .cards-card-body div[data-aue-type="richtext"] {
-  width: 50%;
-}
+  width: 100% }
 .carousel li.teaser-overlay .cards-card-body a {
   color: var(--text-light);
 }
