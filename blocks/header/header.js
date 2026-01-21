@@ -612,6 +612,31 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+
+  // add input element
+  const navToolsSection = block.querySelector('nav .section.nav-tools > .default-content-wrapper > ul:first-of-type');
+  const li = document.createElement('li');
+  const input = document.createElement('input');
+  const icon = document.createElement('span');
+  const img = document.createElement('img');
+  img.src = `/icons/search.svg`;
+  img.alt = 'search';
+  img.dataset.iconName = 'search';
+  img.loading = 'lazy';
+  img.width = 16;
+  img.height = 16;
+
+  icon.appendChild(img);
+  icon.className = 'icon icon-search';
+  
+  input.type = 'text';
+  input.id = 'search-input';
+  input.name = 'search-input';
+  li.appendChild(input);
+  li.appendChild(icon);
+  navToolsSection.appendChild(li);
+
   settingAltTextForSearchIcon();
   //fetchingPlaceholdersData();
   addLogoLink(langCode);
