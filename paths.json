@@ -16,7 +16,7 @@
     "/content/tds-telecom/placeholders:/placeholders.json"
   ],
   "includes": [
-    "/content/tds-telecom/",
-    "/content/dam/tds-telecom/"
+    "/content/dam/tds-telecom/",
+    "/content/tds-telecom/"
   ]
 }
