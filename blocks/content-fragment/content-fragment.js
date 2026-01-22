@@ -42,11 +42,6 @@ export default async function decorate(block) {
   block.innerHTML = '';
   const isAuthor = isAuthorEnvironment();
 
-  if (!contentPath) {
-    console.error('No content path specified for content fragment banner');
-    return;
-  } 
-
 	// Prepare request configuration based on environment
 	const requestConfig = isAuthor 
   ? {
