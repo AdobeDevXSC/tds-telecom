@@ -13,15 +13,25 @@ export default function decorate(block) {
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
-    
-    // Read card style from the third div (index 3)
+
+    // Read card text color style from the third div (index 2)
+    const textStyleDiv = row.children[2];
+    const textStyleParagraph = textStyleDiv?.querySelector('p');
+    const cardTextStyle = textStyleParagraph?.textContent?.trim() || 'black';
+    if (cardTextStyle && cardTextStyle !== 'black') {
+      li.className = cardTextStyle;
+    } else {
+      li.className = 'black';
+    }
+
+    // Read card style from the fourth div (index 3)
     const styleDiv = row.children[3];
     const styleParagraph = styleDiv?.querySelector('p');
     const cardStyle = styleParagraph?.textContent?.trim() || 'default';
     if (cardStyle && cardStyle !== 'default') {
-      li.className = cardStyle;
+      li.classList.add(cardStyle);
     } else {
-      li.className = 'default';
+      li.classList.add('default');
     }
     
     // Read CTA style from the fourth div (index 3)

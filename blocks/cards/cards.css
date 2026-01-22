@@ -499,7 +499,7 @@
 .cards > ul > li.default .cards-card-body > p {
   font-size: 16px;
   line-height: 1.5em;
-  color: #555;
+  color: inherit;
 }
 
 .cards > ul > li.default:hover h1,
@@ -562,4 +562,16 @@
 
 .section.cards-container.bg-theme .cards {
   margin-top: 2rem;
+}
+
+.cards > ul > li.color-theme {
+  color: var(--theme-main-bg-color)
+}
+
+.cards > ul > li.color-white {
+  color: #fff;
+}
+
+.cards > ul > li.color-black { 
+  color: #000;
 }
