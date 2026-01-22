@@ -14,8 +14,8 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     
-    // Read card style from the third div (index 2)
-    const styleDiv = row.children[2];
+    // Read card style from the third div (index 3)
+    const styleDiv = row.children[3];
     const styleParagraph = styleDiv?.querySelector('p');
     const cardStyle = styleParagraph?.textContent?.trim() || 'default';
     if (cardStyle && cardStyle !== 'default') {
@@ -42,7 +42,7 @@ export default function decorate(block) {
       else if (index === 1) {
         div.className = 'cards-card-body';
       }
-      // Third div (index 2) - Card style configuration
+      // Third div (index 2) - Text color style configuration
       else if (index === 2) {
         div.className = 'cards-config';
         const p = div.querySelector('p');
@@ -50,8 +50,16 @@ export default function decorate(block) {
           p.style.display = 'none'; // Hide the configuration text
         }
       }
-      // Fourth div (index 3) - CTA style configuration
+      // Fourth div (index 3) - Style configuration
       else if (index === 3) {
+        div.className = 'cards-config';
+        const p = div.querySelector('p');
+        if (p) {
+          p.style.display = 'none'; // Hide the configuration text
+        }
+      }
+      // Fourth div (index 4) - CTA style configuration
+      else if (index === 4) {
         div.className = 'cards-config';
         const p = div.querySelector('p');
         if (p) {
