@@ -28,7 +28,7 @@ export default async function decorate(block) {
 	//const properties = readBlockConfig(block);
  
 	
-  const contentPath = block.querySelector(':scope div:nth-child(1) > div a')?.textContent?.trim() || '/content/dam/tds-telecom/en/fragments/banners/internet-promo';
+  const contentPath = block.querySelector(':scope div:nth-child(1) > div a')?.textContent?.trim();
   //const variationname = block.querySelector(':scope div:nth-child(2) > div')?.textContent?.trim()?.toLowerCase()?.replace(' ', '_') || 'master';
 	
 	//console.log("variation : "+properties.variation);
