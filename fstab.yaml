@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p59602-e475952.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/tds-telecom/main"
+    url: "https://author-p121050-e1183639.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/tds-telecom/main"
     type: "markup"
     suffix: ".html"
